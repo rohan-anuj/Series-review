@@ -6,6 +6,7 @@ import tw from 'twrnc'
 import axios from "axios"
 import { AntDesign } from '@expo/vector-icons';
 import { TextInput } from 'react-native-gesture-handler'
+import {api_key} from "@env"
 
 
 const Search = () => {

@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { FontAwesome5 } from '@expo/vector-icons';
+import {api_key} from "@env"
 
 const Stream = ({navigation,route}) => {
     const [latest,setLatest]=useState(false)
@@ -26,7 +27,7 @@ async function DataExtract(){
         },
         headers: {
           'x-rapidapi-host': 'streaming-availability.p.rapidapi.com',
-          'x-rapidapi-key': '246051ccd0mshd148d7d4de29b14p179a86jsn856e27f2df24'
+          'x-rapidapi-key': api_key
         }
       };
       
